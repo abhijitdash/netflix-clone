@@ -1,0 +1,78 @@
+.login {
+    width: 100%;
+    height: 125vh;
+    color: white;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url("https://www.okynemedialab.com/wp-content/uploads/2019/11/netflix-background-50-Black-1080x608.jpg");
+    background-size: 75%;
+
+    .top {
+        .wrapper {
+            padding: 20px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+            .logo {
+                height: 40px;
+            }
+
+        }
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+
+        form {
+            width: 300px;
+            height: 300px;
+            padding: 30px;
+            border-radius: 5px;
+            background-color: var(--main-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            input {
+                height: 40px;
+                border-radius: 5px;
+                background-color: gray;
+                color: white;
+                padding-left: 10px;
+
+                &::placeholder{
+                    color: lightgrey;
+                }
+            }
+
+            button{
+                height: 40px;
+                border-radius: 5px;
+                background-color: red;
+                font-size: 18px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+
+            span{
+                color: lightgray;
+
+                b{
+                    color: white;
+                }
+            }
+        }
+    }
+
+
+
+
+}
