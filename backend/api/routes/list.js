@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const List = require("../models/List");
+const Movie = require("../models/Movie");
 const verify = require("../verifyToken");
 
 //Create movie/series list
@@ -56,6 +57,7 @@ router.delete("/:id", verify, async (req, res) => {
 
 //GET
 router.get("/", verify, async (req, res) => {
+    console.log("coming here....1")
         const typeQuery = req.query.type;
         const genreQuery = req.query.genre;
         let list = [];
